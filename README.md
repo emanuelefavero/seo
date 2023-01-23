@@ -114,3 +114,95 @@ A canonical URL is the URL of the page that search engines think is most represe
 ```html
 <link rel="canonical" href="https://www.example.com/" />
 ```
+
+## Rendering Strategies
+
+This is a list of rendering strategies from the most SEO friendly to the least.
+
+- **Static Site Generation** (SSG): The content is generated at build time and served as static files. This is the most SEO friendly rendering strategy.
+
+- **Server Side Rendering** (SSR): The content is generated at request time and served as HTML.
+
+- **Incremental Static Regeneration** (ISR): Use static generation on a per-page basis. Learn more about [Incremental Static Regeneration in Next.js](https://nextjs.org/docs/basic-features/data-fetching/overview#incremental-static-regeneration).
+
+- **Client Side Rendering** (CSR): The content is generated at request time and served as JavaScript. This is the least SEO friendly rendering strategy but sometimes it is the only option.
+
+## URL Structure
+
+- **Use hyphens (-) instead of underscores (\_):** Hyphens are easier to read and are more SEO friendly.
+
+- **Use lowercase:** URLs are case sensitive, using lowercase URLs is more SEO friendly.
+
+- **Use descriptive URLs:** URLs should be descriptive and easy to understand.
+
+- **Use short:** Short URLs are easier to read and are more SEO friendly.
+
+- **Semantic:** URLs should be semantic and easy to understand.
+
+- **logical and consistent patterns:** URLs should follow a logical pattern.
+
+- **Avoid URL parameters:** URL parameters are not SEO friendly.
+
+- **Keyword focused:** URLs should be keyword focused.
+
+## Important meta tags for SEO
+
+- **title:** The title tag is the most important on-page SEO element.
+
+- **description**
+
+- **keywords**
+
+## Open Graph Protocol
+
+The Open Graph protocol enables any web page to become a rich object in a social graph. For instance, this is used on Facebook to allow any web page to have the same functionality as any other object on Facebook.
+
+- **og:title:** The title of your object as it should appear within the graph, e.g., "The Rock".
+
+```html
+<meta property="og:title" content="The Rock" />
+```
+
+- **og:type:** The type of your object, e.g., "video.movie". Depending on the type you specify, other properties may also be required.
+
+```html
+<meta property="og:type" content="video.movie" />
+```
+
+- **og:image:** An image URL which should represent your object within the graph.
+
+```html
+<meta property="og:image" content="http://example.com/rock.jpg" />
+```
+
+- **og:url:** The canonical URL of your object that will be used as its permanent ID in the graph, e.g., "http://www.imdb.com/title/tt0117500/".
+
+```html
+<meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
+```
+
+- **og:description:** A one to two sentence description of your object.
+
+```html
+<meta
+  property="og:description"
+  content="lorem ipsum dolor sit amet, consectetur adipiscing elit."
+/>
+```
+
+> Learn more about [Open Graph Protocol](https://ogp.me/)
+
+## Page Structure
+
+- **Use H1 tag only once per page:** The H1 tag is the most important tag for SEO. It should be used only once per page.
+
+- **Internal links:** Internal links are links that point to other pages on the same website.
+
+- **External links:** External links are links that point to other websites.
+
+### the PageRank Algorithm
+
+The PageRank algorithm is an algorithm used by Google Search to rank websites in their search engine results.
+This algorithm goes through every link on a database and scores domains based on how many links they receive (quantity) and from which domains (quality)
+
+> Learn more about [PageRank Algorithm](https://web.stanford.edu/class/cs54n/handouts/24-GooglePageRankAlgorithm.pdf)
