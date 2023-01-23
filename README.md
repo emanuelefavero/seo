@@ -206,3 +206,71 @@ The PageRank algorithm is an algorithm used by Google Search to rank websites in
 This algorithm goes through every link on a database and scores domains based on how many links they receive (quantity) and from which domains (quality)
 
 > Learn more about [PageRank Algorithm](https://web.stanford.edu/class/cs54n/handouts/24-GooglePageRankAlgorithm.pdf)
+
+## Core Web Vitals
+
+Core Web Vitals are a set of metrics that measure the performance and user experience of a web page. These metrics include:
+
+- **First Contentful Paint (FCP):** measures the time from when the user requests a page to when any visible content is rendered on the screen.
+- \*\*Speed Index: measures how quickly the content of a page is visibly populated.
+- **Time to Interactive (TTI):** measures the time from when the user requests a page to when the page is fully interactive.
+- \*\*Largest Contentful Paint (LCP): measures the render time of the largest element visible in the viewport.
+- **Total Blocking Time (TBT):** measures the total amount of time between FCP and TTI that is blocked by long tasks.
+- **Cumulative Layout Shift (CLS):** measures the layout shift of visible elements within the viewport.
+
+These metrics are important because they directly affect the user's perception of performance and can lead to higher bounce rates if they are not met.
+
+To measure and improve your Core Web Vitals, you can use tools such as Google's PageSpeed Insights, Lighthouse, and Chrome DevTools.
+
+You can also use the Web Vitals JavaScript library to measure the Core Web Vitals on your website and track them over time.
+
+To improve your Core Web Vitals, you can:
+
+- Minimize the use of third-party scripts and iframes
+- Reduce the size of images and other resources
+- Defer the loading of non-critical resources
+- Optimize your code to reduce the time spent in long tasks
+- Use web workers to offload heavy computation to background threads
+- Use a Content Delivery Network (CDN) to reduce the time to first byte.
+
+> Learn more about [Core Web Vitals](https://nextjs.org/learn/seo/web-performance)
+
+## Lighthouse
+
+Lighthouse is an open-source, automated tool for improving the quality of web pages. It can be run as a Chrome extension, from the command line, or as a Node.js module. It audits a page and generates a report on its performance, accessibility, best practices, and SEO.
+
+### Features
+
+- **Performance:** Lighthouse measures the loading performance of a page, including the time to first contentful paint, time to interactive, and speed index.
+- **Accessibility:** Lighthouse audits a page for accessibility issues, such as missing alternative text for images and proper use of ARIA attributes.
+- **Best Practices:** Lighthouse checks a page for best practices, such as the use of HTTPS and avoiding the use of deprecated APIs.
+- **SEO:** Lighthouse audits a page for SEO issues, such as the presence of a valid robots.txt file and structured data.
+
+### Usage
+
+> Note: Remember to use Lighthouse in a private window to avoid any caching issues or extension slow down
+
+#### Chrome Extension
+
+1. Install the Lighthouse Chrome extension from the Chrome Web Store
+2. Go to the web page you want to audit
+3. Click on the Lighthouse icon in the Chrome extension bar
+4. Click on "Generate Report" and wait for the report to be generated
+5. Review the report and take action on any issues that are identified
+
+#### Command Line
+
+1. Install Lighthouse globally by running `npm install -g lighthouse`
+2. Run Lighthouse on a web page by running `lighthouse <url>`
+3. Review the report and take action on any issues that are identified
+
+#### Node.js
+
+1. Install Lighthouse by running `npm install lighthouse`
+2. Use Lighthouse in your Node.js code by requiring the module and running the `lighthouse` function:
+
+```js
+const lighthouse = require('lighthouse')
+const report = await lighthouse('<url>')
+console.log(report)
+```
