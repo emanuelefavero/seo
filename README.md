@@ -4,6 +4,26 @@
 
 Search Engine Optimization (SEO) is the process of optimizing a website or web page to improve its visibility and ranking in search engine results pages (SERPs). By optimizing your website for search engines, you can increase the chances of your website appearing at the top of the SERPs for relevant keywords, which can lead to more traffic and higher conversion rates.
 
+## Table of Contents
+
+- [Key Elements of SEO](#key-elements-of-seo)
+- [Tips for SEO Success](#tips-for-seo-success)
+- [What are web crawlers?](#what-are-web-crawlers)
+- [How does Googlebot work?](#how-does-googlebot-work)
+- [HTTP Status Codes](#http-status-codes)
+- [robots.txt file](#robotstxt-file)
+- [XML Sitemaps](#xml-sitemaps)
+- [Special Meta Tags for Search Engines](#special-meta-tags-for-search-engines)
+  - [Googlebot tag](#googlebot-tag)
+- [Canonical Tags](#canonical-tags)
+- [Rendering Strategies](#rendering-strategies)
+- [URL Structure](#url-structure)
+- [Important meta tags for SEO](#important-meta-tags-for-seo)
+- [Open Graph Protocol](#open-graph-protocol)
+- [Page Structure](#page-structure)
+- [Core Web Vitals](#core-web-vitals)
+- [LightHouse](#lighthouse)
+
 ## Key Elements of SEO
 
 - **Keyword research:** Identifying the keywords and phrases that your target audience is searching for and incorporating them into your website's content, meta tags, and URLs.
@@ -252,7 +272,7 @@ Lighthouse is an open-source, automated tool for improving the quality of web pa
 
 #### Chrome Extension
 
-1. Install the Lighthouse Chrome extension from the Chrome Web Store
+1. Install the Lighthouse Chrome extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk)
 2. Go to the web page you want to audit
 3. Click on the Lighthouse icon in the Chrome extension bar
 4. Click on "Generate Report" and wait for the report to be generated
@@ -274,3 +294,11 @@ const lighthouse = require('lighthouse')
 const report = await lighthouse('<url>')
 console.log(report)
 ```
+
+&nbsp;
+
+---
+
+&nbsp;
+
+[**Go To Top &nbsp; ⬆️**](#table-of-contents)
