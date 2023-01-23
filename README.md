@@ -104,3 +104,13 @@ Meta robot tags are directives that search engines will always respect. Adding t
   ```
 
 > Full list of Googlebot meta tags: [Googlebot Meta Tags](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag#directives)
+
+## Canonical Tags
+
+A canonical URL is the URL of the page that search engines think is most representative from a set of duplicate pages on your site.
+
+> It is useful to use canonical tags when you have multiple URLs that point to the same page.
+
+```html
+<link rel="canonical" href="https://www.example.com/" />
+```
