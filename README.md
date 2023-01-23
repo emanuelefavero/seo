@@ -40,3 +40,67 @@ Search Engine Optimization (SEO) is the process of optimizing a website or web p
 > - It is important to follow the guidelines and best practices of search engines and avoid manipulative tactics that can get your website penalized.
 > - SEO results take time and patience, it is not a quick fix solution.
 > - It is important to stay updated with the latest SEO trends, algorithms updates and best practices.
+
+## What are web crawlers?
+
+Web crawlers, also known as spiders, bots, or web robots, are automated programs that crawl the web to index content for search engines. They follow links from one page to another and collect information about the content on each page. The information collected by web crawlers is used to build search engine indexes.
+
+> Note: Googlebot is the web crawler used by Google.
+
+## How does Googlebot work?
+
+1. **Find URLs:** Googlebot finds new URLs by following links from one page to another.
+
+2. Add to Crawl Queue: Googlebot adds the URLs to a crawl queue to be crawled.
+
+3. **HTTP Request:** The crawler makes an HTTP request to get the headers and acts according to the returned status code:
+
+4. **Render Queue:** If the page has some JavaScript client-side based content, the URLs might be added to a Render Queue. Render Queue is more costly for Google as it needs to use more resources to render JavaScript and therefore URLs rendered are a smaller percentage over the total pages out there on the internet.
+
+5. **Ready to be indexed:** If all criteria are met, the pages may be eligible to be indexed and shown in search results.
+
+## HTTP Status Codes
+
+- [HTTP Status Codes](https://github.com/emanuelefavero/http-status-codes)
+
+## robots.txt file
+
+- [robots.txt](https://github.com/emanuelefavero/robots-txt-templates-)
+
+## XML Sitemaps
+
+- [XML Sitemaps](https://github.com/emanuelefavero/xml-sitemaps)
+
+## Special Meta Tags for Search Engines
+
+Meta robot tags are directives that search engines will always respect. Adding these robots tags can make the indexation of your website easier.
+
+- **Noindex:** This tag tells search engines not to index the page. This is useful for pages that are not ready to be indexed, such as pages that are under construction or settings pages and more
+
+- **Nofollow:** This tag tells search engines not to follow the links on the page
+
+  ```html
+  <meta name="robots" content="noindex, nofollow" />
+  ```
+
+### Googlebot tag
+
+- **Googlebot:** This tag tells Google not to index or follow the page
+
+  ```html
+  <meta name="googlebot" content="noindex, nofollow" />
+  ```
+
+- **nositelinkssearchbox:** This tag tells Google not to show the sitelinks search box for the page
+
+  ```html
+  <meta name="googlebot" content="nositelinkssearchbox" />
+  ```
+
+- **notranslate:** This tag tells Google not to translate the page
+
+  ```html
+  <meta name="google" content="notranslate" />
+  ```
+
+> Full list of Googlebot meta tags: [Googlebot Meta Tags](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag#directives)
